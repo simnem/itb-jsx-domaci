@@ -1,0 +1,75 @@
+body {    
+    background: rgb(133,131,159);
+    background: -moz-radial-gradient(circle, rgba(133,131,159,1) 0%, rgba(71,125,127,1) 51%, rgba(60,165,186,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(133,131,159,1) 0%, rgba(71,125,127,1) 51%, rgba(60,165,186,1) 100%);
+    background: radial-gradient(circle, rgba(133,131,159,1) 0%, rgba(71,125,127,1) 51%, rgba(60,165,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85839f",endColorstr="#3ca5ba",GradientType=1);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    border: 5px solid #64bd97;
+    border-radius: 5%;
+    padding: 1%;
+    margin: 1% 20% 1% 20%;
+    height: 100%;  
+}
+/* 
+HEADER
+*/
+header{
+    text-align: center;
+    height: 200px;
+}
+img {
+    width: 50px;
+    height: 100px;
+    border: 15px #1f5357 double;
+    border-radius: 20%;
+}
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 75px;
+    color: #fff;
+    margin-top: -25px;
+    text-shadow: 3px 1px 2px black;
+}
+/* 
+SECTION
+*/
+h2 {
+    text-align: left;
+    color: #64bd97;
+    text-shadow: #000 1px 0;
+}
+p {
+    color: #c2ffbb;
+}
+section {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+DOMACI
+*/
+h2:first-child {
+    text-align: center;
+    color: grey;
+}
+ p:nth-of-type(2) {
+    color: rgb(248, 172, 248);
+    text-shadow: #000 1px 1px;
+}
+p a {
+    color: red;
+}
+p a:hover {
+    color: white;
+    background-color: green;
+}
+ p:last-of-type {
+    color: limegreen;
+}
+p:nth-of-type(odd) {
+    font-size: 20px;
+}
