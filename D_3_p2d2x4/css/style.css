@@ -1,0 +1,127 @@
+/* 
+POZICIONIRANJE
+*/
+
+body {
+    width: 50%;
+    margin: 10px auto;
+}
+form {
+    position: relative;
+}
+h1 {
+    text-align: center;
+}
+fieldset:first-of-type label {
+    margin: 0 50px;
+}
+label {
+    margin-left: 12px;
+}
+li {
+    list-style: none;
+    padding: 5px 60px;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+input[type=radio], input[type=file] {
+    display: inline-block;
+    margin-left: 50px;
+    border: none;
+}
+fieldset + fieldset p:last-child {
+    margin-left: 45px;
+}
+textarea {
+    margin-left: 10px;
+}
+
+
+input[type=submit] {
+    display: block;
+    margin: 25px 0 15px 85px;
+}
+input[type=reset] {
+    display: block;
+    margin-left: 85px;
+}
+
+div {
+    padding-left: 50px;
+}
+
+/* 
+STILIZOVANJE
+*/
+body {
+    color: #3A4D39;
+    font-family: Helvetica;
+    font-weight: bold;
+    background-color: #ECE3CE;
+    /* text-shadow: #f8f7f7 0px 0px; */
+}
+fieldset {
+    border: 2px solid #3A4D39;
+    background: #739072 url('slike/idea_logo.png') right no-repeat
+}
+fieldset + fieldset {
+    border: 2px solid #3A4D39;
+    background: #739072 url('slike/kodi.png') right no-repeat
+}
+legend, textarea, input, select {
+    background-color: #ECE3CE;
+}
+textarea, input, fieldset, legend{
+    border-radius: 5px;
+    border: 2px solid #3A4D39;
+}
+input[type=submit]{
+	box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	cursor:pointer;
+	color:#757d6f;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ced9bf;
+}
+input[type=submit]:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+input[type=submit]:active {
+	position:relative;
+	top:1px;
+}
+input[type=reset] {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+input[type=reset]:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+input[type=reset]:active {
+	position:relative;
+	top:1px;
+}
