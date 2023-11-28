@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+section {
+    overflow: hidden;
+}
+div {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+}
+h3 {
+    padding: 5px 0;
+}
+img {
+    width: 230px;
+    height: 230px;
+}
+div p {
+    margin: 0 15px;
+}
+aside {
+    clear: both;
+}
