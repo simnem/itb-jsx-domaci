@@ -15,7 +15,6 @@ preostalaPoglavlja = brojPoglavlja - prviDan - drugiDan;
 console.log("Čitaocu je preostalo da pročita još " + preostalaPoglavlja + " poglavlja.");
 
 // ZADATAK 3 
-
 let dinPera = 1240;
 let dinMika = 1955;
 let kusur = 900; 
