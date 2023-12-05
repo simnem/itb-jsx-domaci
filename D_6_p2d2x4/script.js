@@ -1,7 +1,7 @@
 //  ZADATAK 1
 let ukupanNovac = 2000;
-let autobuskaKarta = Math.floor(ukupanNovac / 5); 
-let smestaj = Math.floor(ukupanNovac / 3);
+let autobuskaKarta = ukupanNovac / 5; 
+let smestaj = ukupanNovac / 3;
 let preostaliNovac = ukupanNovac - autobuskaKarta - smestaj;
 
 console.log("Putniku je preostalo " + preostaliNovac + " dinara.");
