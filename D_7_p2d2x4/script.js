@@ -1,11 +1,11 @@
 // Zadatak 1
-let n = 27
+let n = 27;
 let v = 80;
 
 let propisi = v / n;
 
 let visakLjudi = n - (v / 3);
-visakLjudi = Math.ceil(visakLjudi)
+visakLjudi = Math.ceil(visakLjudi);
 
 if (propisi >= 3) {
     document.write(`<p style="color:green">DA</p>`);
