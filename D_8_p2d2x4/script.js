@@ -19,7 +19,9 @@ document.body.innerHTML += `</ul></br>`
 let redovi = 1
 for (i = 1; i <= 64; i++) {
     if (redovi % 2 != 0){
-        if (i % 2 != 0){document.body.innerHTML += `<span style="border: 1px solid black; display: inline-block; width: 25px; text-align: center; margin: 10px 0;">${i}</span>`}else if (i % 2  == 0) {
+        if (i % 2 != 0){
+            document.body.innerHTML += `<span style="border: 1px solid black; display: inline-block; width: 25px; text-align: center; margin: 10px 0;">${i}</span>`
+        }else if (i % 2  == 0) {
             document.body.innerHTML += `<span style="border: 1px solid black; display: inline-block; width: 25px; text-align: center; color:white; background-color:black;">${i}</span>`
         }
         if (i % 8 == 0){
