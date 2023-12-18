@@ -2,13 +2,14 @@
 let spisak = ["Bread", "Meat", "Pasta", "Sauces", "Cereals"]
 
 let stavkeZaKupovinu = niz => {
-    document.body.innerHTML += "<ul>";
+    let neuredjenaLista = "<ul>";
 
     for ( i = 0; i < niz.length; i++) {
-        document.body.innerHTML += `<li>${niz[i]}</li>`
+        neuredjenaLista += `<li>${niz[i]}</li>`
     }
 
-    document.body.innerHTML += "</ul>";
+    neuredjenaLista += "</ul>";
+    document.body.innerHTML += neuredjenaLista
 }
 stavkeZaKupovinu(spisak);
 
@@ -17,12 +18,12 @@ stavkeZaKupovinu(spisak);
 let timovi = ["Boston Celtics", "Brooklyn Nets", "New York Knicks", "Philadelphia 76ers", "Toronto Raptors", "Chicago Bulls", "Cleveland Cavaliers", "Detroit Pistons"]
 
 let kosarkaskiTimovi = niz => {
-    let tableHTML = "<table>";
+    let tabela = "<table>";
     for (let i = 0; i < niz.length; i++) {
-        tableHTML += `<tr><td>${niz[i]}</td></tr>`;
+        tabela += `<tr><td>${niz[i]}</td></tr>`;
     }
-    tableHTML += "</table>";
-    document.body.innerHTML += tableHTML;
+    tabela += "</table>";
+    document.body.innerHTML += tabela;
 };
 kosarkaskiTimovi(timovi);
 
