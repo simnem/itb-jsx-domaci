@@ -1,5 +1,5 @@
 // Test niz 
-let tempNiz = [8, 12, 15, 12.7, 9]
+let tempNiz = [8, 12, 15, 12.7, 9];
 
 // Zadatak 1
 let prosecnaTemp = niz => {
@@ -11,14 +11,14 @@ let prosecnaTemp = niz => {
 }
 let temperaturaNajblizaProsecnoj = niz => { 
     let prosek = prosecnaTemp(niz);        // poziv funkcije koja vraca prosecnu vrednost
-    let najbliza = niz[0]                 // deklarisanje privremene najblize vrednosti
-    console.log(prosek)
+    let najbliza = niz[0];                 // deklarisanje privremene najblize vrednosti
+    console.log(prosek);
     niz.forEach(e => {                    // petlja trazi najblizu vrednost prosecnoj
         if (Math.abs(prosek - e) < Math.abs(prosek - najbliza)) {
-            najbliza = e
+            najbliza = e;
         }
     })
-    return najbliza                     // vraca najblizu vrednost prosecnoj u nizu
+    return najbliza;                     // vraca najblizu vrednost prosecnoj u nizu
 }
 console.log(`Najbliza temperatura prosecnoj je ${temperaturaNajblizaProsecnoj(tempNiz)}`);  // ispisuje najblizu vrednost prosecnoj
 
@@ -46,21 +46,16 @@ let ispisTemperatura = niz => {
     let maksTemp = maksimalnaTemperatura(niz);              // poziv funkcije koja trazi maksimalnu vrednost u nizu
     let najblizaTemp = temperaturaNajblizaProsecnoj(niz);   // poziv funkcije koja trazi vrednost u nizu koja je najbliza prosecnoj
     niz.forEach ( e => {
-        if( e == maksTemp) {                                // ako je temperatura ista kao maksimalna ispisuje je crvenom bojom
-            document.body.innerHTML += `<p style="color: red">${e} </p>`
-        }
-
-        if( e == minTemp) {                                // ako je temperatura ista kao minimalna ispisuje je plavom bojom
-            document.body.innerHTML += `<p style="color: blue">${e} </p>`
-        }  
-
-        if( e == najblizaTemp) {                                // ako je temperatura najbliza prosecnoj ispisuje je zutom bojom
-            document.body.innerHTML += `<p style="color: yellow">${e} </p>`
-        }
-
-        if( e != maksTemp && e != minTemp && e != najblizaTemp) { // u svim ostalim slucajima, ispisuje temperaturu crnom bojom
-            document.body.innerHTML += `<p>${e} </p>`
+        if( e == maksTemp) {                                                // ako je temperatura ista kao maksimalna ispisuje je crvenom bojom
+            document.body.innerHTML += `<p style="color: red">${e} </p>`;
+        } else if ( e == minTemp) {                                         // ako je temperatura ista kao minimalna ispisuje je plavom bojom
+            document.body.innerHTML += `<p style="color: blue">${e} </p>`;
+        } else if( e == najblizaTemp) {                                     // ako je temperatura najbliza prosecnoj ispisuje je zutom bojom
+            document.body.innerHTML += `<p style="color: yellow">${e} </p>`;
+        } else {
+            document.body.innerHTML += `<p>${e} </p>`;                      // u svim ostalim slucajevima ispisuje je u crnoj boji, defaultnoj
         }
     })
-}
+};
+
 ispisTemperatura(tempNiz);                                      //poziv funkcije koja ispisuje temperature
