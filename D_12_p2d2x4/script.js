@@ -16,10 +16,8 @@ let dan = {                                                                 // i
     proveraTempIspod: function() {                                          // funkcija proverava da li je temperatura padala ispod -5 stepeni i da li je padala kisa
         let provera = false;
         this.temperature.forEach(temp =>{                                   // prolazi se kroz niz temperature, uporedjuje vrednosti sacuvane u varijabli 
-            if(this.kisa == true && temp < -5) {                            // vraca boolean vrednost true ukoliko je padala kisa i temperatura bila ispod -5 stepeni
+            if(this.kisa == true && temp < -5) {                            // dodeljuje boolean vrednost true ukoliko je padala kisa i temperatura bila ispod -5 stepeni
                 provera = true;
-            } else {
-                provera = false;
             }
         })
         return provera                                                      // vraca vrednost sacuvanu u promenjivoj provera
@@ -29,8 +27,6 @@ let dan = {                                                                 // i
         this.temperature.forEach(temp =>{ 
             if(this.oblacno == true && temp > 25) {                         // u slucaju da je temperatura bila iznad 25 stepeni i da je bilo oblacno dodeljuje boolean vredsnost true promenjivoj
                 provera = true;
-            } else {                                                        // u suportnom joj dodeljuje vrednost false
-                provera = false;
             }
         })
         return provera;                                                     // vraca vrednost sacuvanu u promenjivoj provera
