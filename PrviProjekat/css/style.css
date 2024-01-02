@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 14px;
+}
+body { 
+   background-image:url("https://i.ibb.co/gVPYwQs/micheile-henderson-1ri88twtj-P0-unsplash.jpg");
+   background-position: center;
+}
+/* 
+   POCETNA STRANICA
+*/
+.toggleOff {
+   width: 60%;
+   background-color: #fff;
+   margin: 5% auto;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+   background: transparent;
+   backdrop-filter: blur(10px);
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+
+.toggleOff h1 { 
+   font-size: 3rem;
+   color: #fff;
+   text-shadow: 2px 1px black;
+   margin: 5%;
+}
+.dugme {
+   line-height: 1;
+   text-decoration: none;
+   color: #333333;
+   font-size: 18px;
+   border-radius: 0px;
+   width: 150px;
+   height: 40px;
+   font-weight: bold;
+   border: 2px solid #333333;
+   transition: 0.3s;
+   box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+   background-color: #ffffff;
+ }
+ .dugme:hover {
+   box-shadow: 0 0 #333;
+   color: #fff;
+   background-color: #333;
+ }
+
+.toggleOn {
+   display: none;
+}
+.container { 
+   gap: 10px;
+   width: 30%;
+   height: 80vh;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+   margin: 5% auto;
+   background: rgb(204,221,201);
+   background: linear-gradient(90deg, rgba(204,221,201,1) 9%, rgba(224,226,216,1) 89%);
+   padding: 2%;
+   border-radius: 10px;
+}
+.after { 
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+}
+/* 
+   UREDJIVANJE FORME
+*/
+.after h2 {
+   font-size:  2rem;
+} 
+.after label { 
+   color: #000;
+   font-weight: bold;
+}
+legend { 
+   font-size: 2rem;
+   font-weight: bold;
+}
+.after fieldset { 
+   display: table;
+   border: none;
+   text-align: center;
+   margin: 15px auto;
+}
+.after fieldset p { 
+   display: table-row;
+}
+.after fieldset p label, .after fieldset p input { 
+   display: table-cell;
+   margin: 5px;
+   text-align: left;
+}
+.porudzbina img{
+   height: 5px;
+   width: auto;
+}
+section:last-of-type { 
+   font-weight: bold;
+   color: purple;
+}
