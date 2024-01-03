@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 14px;
+}
+body { 
+   background-color: aqua;
+}
+.container { 
+   text-align: center;
+}
+.container div { 
+   margin: 15px auto;
+   background-color: white;
+   width: 80%;
+   text-align: left;
+
+}
+.container div:hover {
+   width: 82%;
+   box-shadow: 2px 2px 15px black;
+}
+button { 
+   margin: 5px;
+}
