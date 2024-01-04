@@ -49,27 +49,26 @@ let btnNovapitanja = document.querySelector("button:last-of-type");
 
 btnPosalji.addEventListener("click", ()=> { 
     let cekiraniOdgovori = [];
-
-    for( let i = 0; i < 5; i++) {
+    let k = 1;
+    for ( let i = 0; i < 5; i++) {
        for( let j = 0; j < 3; j++) {
-        if (document.querySelector(`#pitanje${i}_${j}:checked`)){
+        if (document.querySelector(`#pitanje${k}_${j}:checked`)){
             cekiraniOdgovori.push(nbaPitanja[i].ponudjeniOdgovori[j]); 
         }
        }
+       k++;
     }
 
     console.log(cekiraniOdgovori)
 
-    for( let i = 0; i < 5; i++) {
-        let j = 1
+    for( let i = 0 , j = 0, k = 1; i < 5; i++, j++, k++) {
         console.log(nbaPitanja[i].tacanOdgovor);
         console.log(cekiraniOdgovori[i]);
-        j++;
 
-        if(nbaPitanja[i].tacanOdgovor == cekiraniOdgovori[i]) {
-            console.log(`Tacan odgovor`);
+        if(nbaPitanja[i].tacanOdgovor == cekiraniOdgovori[j]) {
+            document.body.innerHTML += `<p style="color:green; margin-left: 10%;">${k}. pitanje tacan odgovor</p`;
         } else {
-            console.log(`Netacan odgovor`);
+            document.body.innerHTML += `<p style="color:red; margin-left: 10%;">${k}. pitanje netacan odgovor</p`;
         }
 }
 })
