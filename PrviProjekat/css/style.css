@@ -8,6 +8,8 @@
 body { 
    background-image:url("https://i.ibb.co/gVPYwQs/micheile-henderson-1ri88twtj-P0-unsplash.jpg");
    background-position: center;
+   text-align: center;
+
 }
 /* 
    POCETNA STRANICA
@@ -61,7 +63,7 @@ body {
 .container { 
    gap: 10px;
    width: 30%;
-   height: 80vh;
+   height: auto;
    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
    margin: 5% auto;
    background: rgb(204,221,201);
@@ -92,13 +94,13 @@ legend {
 .after fieldset { 
    display: table;
    border: none;
-   text-align: center;
+   text-align: left;
    margin: 15px auto;
 }
-.after fieldset p { 
+.after fieldset div { 
    display: table-row;
 }
-.after fieldset p label, .after fieldset p input { 
+.after fieldset div label, .after fieldset div input { 
    display: table-cell;
    margin: 5px;
    text-align: left;
@@ -107,7 +109,7 @@ legend {
    height: 5px;
    width: auto;
 }
-section:last-of-type { 
+.porudzbina div:last-of-type { 
    font-weight: bold;
    color: purple;
 }

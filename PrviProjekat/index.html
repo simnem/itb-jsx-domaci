@@ -17,54 +17,56 @@
             <form>
                 <fieldset>
                     <legend>Odaberite cveće</legend>
-                    <p>
+                    <div>
                         <input type="number" name="inputRuze" id="ruze" placeholder="Cena po cvetu je 150 din.">
                         <label for="ruze">Ruže</label>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="number" name="inputLjiljani" id="ljiljani" placeholder="Cena po cvet je 120 din.">
                         <label for="ljiljani">Ljiljani</label>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="number" name="inputGerberi" id="gerberi" placeholder="Cena po cvetu je 70 din.">
                         <label for="gerberi">Gerberi</label>
-                    </p>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Dodatni poklon:</legend>
-                    <p>
+                    <div>
                         <input type="checkbox" name="inputPokloni" id="bombonjera" value="bombonjera">
                         <label for="bombonjera">Bombonjera</label>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="checkbox" name="inputPokloni" id="cokolada" value="cokolada">
                         <label for="cokolada">Čokolada</label>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="checkbox" name="inputPokloni" id="sampanjac" value="sampanjac">
                         <label for="sampanjac">Šampanjac</label>
-                    </p>
+                    </div>
                 </fieldset>
                 <fieldset class="placanje">
                     <legend>Plaćanje:</legend>
-                    <p>
+                    <div>
                         <input type="radio" name="inputPlacanje" id="kes" value="kes" checked>
                         <label for="kes">Keš</label>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="radio" name="inputPlacanje" id="kartica" value="kartica">
                         <label for="kartica">Kartica</label>
-                    </p>
+                    </div>
                 </fieldset>
-                        <input class="dugme" type="submit" value="Izračunaj" id="izracunaj">
-                        <input class="dugme" type="reset" value="Resetuj" id="resetuj">   
-            </form>
-            <div class="porudžbina">
-                <h2>Vaša porudžbina:</h2>
-                <section>
+                <input class="dugme" type="submit" value="Izračunaj" id="izracunaj">
+                <input class="dugme" type="reset" value="Resetuj" id="resetuj">
+                <fieldset class="porudzbina">
+                    <h2>Vaša porudžbina:</h2>
+                    <div>
 
-                </section>
-            </div>
+                    </div>
+                </fieldset>        
+                        
+            </form>
+
         </div>
     <script src="js/script.js"></script>
 </body>

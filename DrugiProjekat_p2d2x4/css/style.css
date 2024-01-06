@@ -6,14 +6,16 @@
     font-size: 14px;
 }
 body { 
-   background-color: aqua;
+   background: radial-gradient(circle, rgba(133,131,159,1) 0%, rgba(71,125,127,1) 51%, rgba(60,165,186,1) 100%);
+   text-align: center;
 }
 .container { 
    text-align: center;
 }
 .container div { 
    margin: 15px auto;
-   background-color: white;
+   background: transparent;
+   backdrop-filter: blur(10px);
    width: 80%;
    text-align: left;
 
@@ -25,3 +27,26 @@ body {
 button { 
    margin: 5px;
 }
+p {
+   font-weight: bold;
+   font-size: 1.5rem;
+   text-shadow: 1px 1px #000;
+}
+h1 { 
+   font-size: 2rem;
+}
+button {
+   color: #ffffff;
+   font-size: 18px;
+   border-radius: 10px;
+   width: 200px;
+   height: 40px;
+   font-weight: bold;
+   border: 4px double #ffffff;
+   transition: 0.3s;
+   background-color: #b39ddb;
+ }
+ 
+ button:hover {
+   opacity: .5;
+ }
