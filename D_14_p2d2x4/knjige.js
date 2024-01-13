@@ -30,7 +30,8 @@ class Knjiga {
     };
     get autor() {
         return this._autor
-    };get godIzdanja() {
+    };
+    get godIzdanja() {
         return this._godIzdanja
     };
     get brojStrana() {
@@ -42,7 +43,7 @@ class Knjiga {
 
     // metode 
     stampaj() {
-        console.log(`Naslov knjige je "${this.naslov}", od autora ${this.autor}. Knjiga je napisana ${this.godIzdanja} godine, i prostire se na ${this._brojStrana}. Ovo delo kreće po ceni od ${this.cena} dinara.`)
+        console.log(`Naslov knjige je "${this.naslov}", od autora ${this.autor}. Knjiga je napisana ${this.godIzdanja} godine, i prostire se na ${this._brojStrana}. Ovo delo kreće po ceni od ${this.cena} dinara.`);
     }
     obimna() { 
         return (this.brojStrana > 600) ? true : false;
@@ -55,4 +56,4 @@ class Knjiga {
     }
 }
 
-export default Knjiga
+export default Knjiga;
