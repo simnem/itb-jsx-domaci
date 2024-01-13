@@ -12,22 +12,22 @@ let knjige = [knjiga1, knjiga2, knjiga3, knjiga4, knjiga5];
 knjige.forEach( k => {                      //iteriramo kroz niz knjiga
     if (k.dugackoIme()) {                   // uz pomoc metode trazimo sve autore cije ime sadrzi preko 18 karaktera
         console.log(k.autor);               // ako je uslov zadovoljen ispisujemo ime
-    }
-})
+    };
+});
 
 for( let k of knjige) {                     //iteriramo kroz niz knjiga
     if( k.skupa() && k.obimna()) {          // trazimo sve knjige koje zadovoljavaju oba uslova iz metoda
         console.log(k);                     // ispisujemo ako su uslovi zadovoljeni
-    }
-}
+    };
+};
 
 let ukupnaCena = niz =>  {                  // kreiramo funkciju koja prolazi kroz sve clanove niza i sabira cene knjiga
     let suma = 0;
     niz.forEach( k => { 
         suma += k.cena;
-    })
+    });
     return suma;                           // vracamo dobijenu vrednost
-}
+};
 console.log(`Ukupna cena svih knjiga iz niz iznosi: ${ukupnaCena(knjige)} dinara.`); // poziv funkcije 
 
 let prosecnaCena = niz => { 
@@ -41,5 +41,5 @@ let prosecnaStranica = niz => {
         zbirStranica += k.brojStrana;
     })
     return ukupnaCena(niz) / zbirStranica;     // vracamo podeljnu vrednost ukupne kolicine stranica i ukupne cene knjiga
-}
+};
 console.log(`Prosecna cena jedne stranice knjige je ${ prosecnaStranica(knjige)} dinara.`);     // poziv funkcije
