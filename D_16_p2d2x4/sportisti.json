@@ -1,0 +1,54 @@
+{    
+   "sportisti": [
+    {
+        "imePrezime": "Vlade Divac",
+        "visina": 2.12,
+        "timovi": ["Partizan", "Lakers", "Charlote", "Sacramento"]
+    },
+    {
+        "imePrezime": "Predrag Stojakovic",
+        "visina": 2.06,
+        "timovi": ["Sacramento", "Toronto", "Dalas", "Indiana", "New Orleans"]
+    },
+    {
+        "imePrezime": "Shaquille O'Neal",
+        "visina": 2.16,
+        "timovi": ["Magic", "Lakers", "Heat", "Suns", "Cavaliers", "Celtics"]
+    },
+    {
+        "imePrezime": "Dwyane Wade",
+        "visina": 1.93,
+        "timovi": ["Heat", "Bulls", "Cavaliers"]
+    },
+    {
+        "imePrezime": "Dirk Nowitzki",
+        "visina": 2.13,
+        "timovi": ["Mavericks"]
+    },
+    {
+        "imePrezime": "Chris Bosh",
+        "visina": 2.11,
+        "timovi": ["Raptors", "Heat"]
+    },
+    {
+        "imePrezime": "Allen Iverson",
+        "visina": 1.83,
+        "timovi": ["76ers", "Nuggets", "Pistons"]
+    },
+    {
+        "imePrezime": "Kobe Bryant",
+        "visina": 1.98,
+        "timovi": ["Lakers"]
+    },
+    {
+        "imePrezime": "Kevin Garnett",
+        "visina": 2.11,
+        "timovi": ["Timberwolves", "Celtics", "Nets"]
+    },
+    {
+        "imePrezime": "Paul Pierce",
+        "visina": 2.01,
+        "timovi": ["Celtics", "Nets", "Wizards", "Clippers"]
+    }
+]
+}
