@@ -2,33 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana;
-    font-size: 14px;
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 28px;
 }
 body { 
    background: radial-gradient(circle, rgba(133,131,159,1) 0%, rgba(71,125,127,1) 51%, rgba(60,165,186,1) 100%);
-   text-align: center;
    display: flex;
-   justify-content: center;
-   padding: 10px;
-   gap: 10px;
+   justify-content: space-evenly;
 }
-.container > div { 
-   margin: 15px auto;
-   background: transparent;
-   backdrop-filter: blur(10px);
-   width: 80%;
-   text-align: left;
-
+.container { 
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   height: 50vh;
+   flex-direction: column;
+   gap: 10%; 
 }
-.backgroundContainer div { 
+.cardfield div { 
    text-align: center;
    border: black solid 2px;
    border-radius: 10px;
    position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.backgroundContainer div:hover {
+.cardfield div:hover {
    box-shadow: 2px 2px 15px black;
+   cursor: pointer;
 }
 fieldset { 
    border: none;
@@ -46,26 +47,186 @@ label {
    color: white;
    margin-bottom: 15px;
  }
-.backgroundContainer { 
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
-   align-self: center;
-   justify-content: center;
-   border-radius: 10px;
-}
-.backSide { 
-   visibility: hidden;
-}
-.frontSide { 
-   background-color: #e9572b;
-   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqwigw9_bVSmgs4RG8ian4JjkMKmXmBaFEug&usqp=CAU");
-   background-position: center;
-   background-size: contain;
-}
+ form { 
+   margin: 10%;
+ }
+ form h1 { 
+   color: #fff;
+   font-weight: bold;
+   font-family: 'Workbench', sans-serif;
+   font-size: 4rem;
+   text-shadow: #000000 2px 2px 2px;
+   line-height: 120%;
+ }
+ form p { 
+   font-size: 2rem;
+ }
+ form input[type="radio"] { 
+   accent-color: rgb(84, 20, 114);
+ }
 a { 
    cursor: pointer;
    text-decoration: underline;
-   font-size: 10px;
+   font-size: 0.5rem;
    font-weight: bold;
 }
+
+.glow {
+   font-family: 'Seven Segment', sans-serif;
+   text-shadow: 0 0 50px 15px #e04848;
+   font-size: 80px;
+   color: #FF3232;
+   text-align: center;
+   -webkit-animation: glow 1s ease-in-out infinite alternate;
+   -moz-animation: glow 1s ease-in-out infinite alternate;
+   animation: glow 1s ease-in-out infinite alternate;
+ }
+ .cardfield { 
+   display:  flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+}
+ @-webkit-keyframes glow {
+   /* from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+   }
+   to {
+     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+   }
+ } */
+   from {
+      text-shadow: 0 0 20px #df4242
+   }
+   to {
+      text-shadow: 0 0 40px #ff0000
+   }
+ }
+.congrats { 
+   margin: 30% auto;
+   box-shadow: 2px 2px 15px black;
+   border-radius: 10px;   
+   display: flex;
+   width: 50%;   
+}
+.congrats img { 
+   display: inline-block;
+   height: 150px;
+   width: 40%;
+}
+.congrats div { 
+   display: flex;
+   flex-direction: column;
+   padding: 10px 50px 10px 0;
+}
+.congrats button { 
+   width: 50%;
+   margin: 3px auto;
+}
+
+button{
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   line-height: 1;
+   text-decoration: none;
+   color: #000000;
+   font-size: 18px;
+   border-radius: 0px;
+   width: 20%;
+   height: 40px;
+   position: relative;
+   transition: 0.3s;
+   background-color: #ffffff;
+   margin-right: 5px;
+ }
+
+ button::before, button::after {
+   content: "";
+   display: inline-block;
+   position: absolute;
+   border: 1px solid #000000;
+   width: 100%;
+   height: 100%;
+   transition: .3s;
+ }
+
+ button::before {
+   top: -2px;
+   left: -2px;
+ }
+ 
+ button::after {
+   top: 2px;
+   left: 2px;
+ }
+ 
+ button:hover::before, button:hover::after {
+   top: 0;
+   left: 0;
+ }
+input[type="submit"]:hover{ 
+   background-color: #000000;
+   color: #fff;
+}
+table {
+   border: 4px solid #BA8697;
+   background-color: #555555;
+   width: 400px;
+   text-align: center;
+   border-collapse: collapse;
+ }
+ table td, table th {
+   border: 1px solid #555555;
+   padding: 4px 4px;
+ }
+ table tbody td {
+   font-size: 13px;
+   font-weight: bold;
+   color: #FFFFFF;
+ }
+ table tr:nth-child(even) {
+   background: #BA8697;
+ }
+ table td:nth-child(even) {
+   background: #BA8697;
+ }
+ table tfoot {
+   font-weight: bold;
+   background: #BA8697;
+   border-top: 1px solid #444444;
+ }
+ table tfoot .links {
+   text-align: right;
+ }
+ table tfoot .links a{
+   display: inline-block;
+   background: #FFFFFF;
+   color: #BA8697;
+   padding: 2px 8px;
+   border-radius: 5px;
+ }
+ #scoreboardContainer { 
+   margin: 5%;
+ }
+ @media only screen and (max-width:800px) {
+   /* For tablets: */
+    body { 
+      display: flex;
+      flex-direction: column;
+   }
+   .container { 
+      margin-bottom: 150%;
+   }
+   }
+ 
+ @media only screen and (max-width:500px) {
+   /* For mobile phones: */
+   button { 
+      width: 50%;
+      margin: 0 auto;
+   }
+   .container { 
+      margin-bottom: 250%;
+   }
+ }
