@@ -19,18 +19,18 @@
     </header>
     <div class="container">
       <section>
-        <ul>
+        <ul id="emptyList">
 
         </ul>
       </section>
       <form>
         <input type="text" placeholder="Your message...">
-        <input type="submit">
+        <input type="submit" value="Send">
       </form>
 
       <form>
         <input type="text" placeholder="Update username...">
-        <input type="submit">
+        <input type="submit" value="Update Username">
       </form>
 
     </div>
@@ -51,7 +51,6 @@
         firebase.initializeApp(firebaseConfig);
         let db = firebase.firestore();
     </script>
-    <script src="js/script.js"></script>
-    <script src="js/chat.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>

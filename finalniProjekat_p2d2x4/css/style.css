@@ -34,7 +34,17 @@ form {
    text-align: center;
    margin: 10px;
 }
-
+section { 
+   border:  2px solid black;
+   border-radius: 5px;
+   width: 50%;
+   margin: 5px auto;
+   text-align: center;
+}
+section ul { 
+   list-style: none;
+   margin: 10px 20px 10px 20px;
+}
 input[type=submit] { 
    background-color: purple;
    color: #fff;

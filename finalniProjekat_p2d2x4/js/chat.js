@@ -23,16 +23,21 @@ class Chatroom {
         return this._username;
     }
 
-    async addChat(mess) {
-        // Kreiranje dokumenta koji želimo da upišemo u bazu
-        let docChat = {
-            message: mess,
-            username: this.username,
-            room: this.room,
-            created_at: new Date()
-        };
-        let response = await this.chats.add(docChat); // pamti dokument u db
-        return response; // Vraća promis, na koji može da se zakači .then i .catch
+    async addChat(mess) { 
+        try {
+            // Kreiranje dokumenta koji želimo da upišemo u bazu
+            let docChat = {
+                message: mess,
+                username: this.username,
+                room: this.room,
+                created_at: new Date()
+            };
+            let response = await this.chats.add(docChat); // pamti dokument u db
+            return response; // Vraća promis, na koji može da se zakači .then i .catch
+    }
+        catch { 
+            console.error('Doslo je do greske.', err);
+        }
     }
 
     getChats(callback) {
@@ -48,7 +53,5 @@ class Chatroom {
         });
     }
 }
-let chatroom1 = new Chatroom("#js", "snemanja")
-chatroom1.getChats(data => {
-    console.log(data);
-});
+
+export default Chatroom;
