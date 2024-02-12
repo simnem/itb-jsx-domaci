@@ -3,10 +3,15 @@ class Chatroom {
         this.room = r;
         this.username = u;
         this.chats = db.collection('chats')
+        this.unsub = false;
     }
 
-    set room(r) { 
+    set room(r) {
         this._room = r
+ 
+        if( this.unsub)  {
+            this.unsub();
+        }
     }
     set username(u) { 
         if( u.length >= 2 && u.length <= 10 && u.trim() != '') { 
@@ -41,7 +46,7 @@ class Chatroom {
     }
 
     getChats(callback) {
-        this.chats
+        this.unsub = this.chats
         .where('room', '==', this.room)
         .orderBy('created_at')
         .onSnapshot(snapshot => {
@@ -52,6 +57,17 @@ class Chatroom {
             });
         });
     }
-}
+    permanentlyDeleteMessage(data) { 
+        const firestore = firebase.firestore();
+        const chatDocRef = firestore.doc(`chats/${data.id}`);
+        chatDocRef.delete()
+            .then(() => {
+                console.log('Message deleted');
+            })
+            .catch((err) => {
+                console.error('Error: ', err);
+            });
+    }
+} 
 
 export default Chatroom;

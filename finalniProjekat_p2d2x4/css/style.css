@@ -11,7 +11,7 @@ header {
 h1, h2 { 
    margin: 15px;
    color: purple;
-
+   text-shadow: 2px black;
 }
 
 nav button { 
@@ -32,18 +32,34 @@ nav button:hover{
 
 form { 
    text-align: center;
-   margin: 10px;
+   margin: 10px auto;
+   width: 50%;
 }
-section { 
-   border:  2px solid black;
-   border-radius: 5px;
+div > section { 
    width: 50%;
    margin: 5px auto;
-   text-align: center;
+   text-align: left;
+   height: 60vh;
+   overflow: auto;
 }
 section ul { 
    list-style: none;
-   margin: 10px 20px 10px 20px;
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: 100%;
+}
+section ul li {
+   display: inline-block; 
+   margin: 5px;
+   width: 50%;
+}
+section ul li p { 
+   border-radius: 10px;
+   padding: 5px;
+   position: relative;
 }
 input[type=submit] { 
    background-color: purple;
@@ -51,4 +67,90 @@ input[type=submit] {
    cursor: pointer;
    border-radius: 5px;
    min-width: 100px;
+   padding: 10px;
+   margin-left: 5px;
+}
+input[type=submit]:hover { 
+   background-color: rgb(97, 24, 97);
+}
+textarea {
+   width: 100%;
+   border-radius: 5px;
+}
+form > section:first-of-type { 
+   display: flex;
+   justify-content: center;
+   margin-bottom: 5px;
+}
+form:first-of-type {
+   display: flex;
+   justify-content: space-between;
+}
+form:first-of-type > input[type=color] { 
+   width: 80%;
+}
+form:first-of-type > input[type=submit] { 
+   width: 20%;
+}
+@media screen and (max-width: 599px) {
+   h1, h2, button, section, input { 
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 5px auto;
+   }
+   div > section { 
+      height: 50vh;
+      overflow: auto;
+}
+body {
+   overflow: auto;
+}}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+   h1, h2, section { 
+      width: 100%;
+      border: 1px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 5px auto;
+}
+div > section { 
+   height: 50vh;
+   overflow: auto;
+}
+nav{ 
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+nav button { 
+   width: 40%;
+   margin: 5px;
+}
+body {
+   overflow: auto;
+   width: 100vh;
+}
+}
+button:first-of-type { 
+   background-color: grey;
+}
+span:first-of-type { 
+   font-weight: bold;
+}
+i { 
+   margin: 5px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+i:hover{
+   cursor: pointer;
 }
