@@ -16,8 +16,9 @@ class Chatroom {
     set username(u) { 
         if( u.length >= 2 && u.length <= 10 && u.trim() != '') { 
             this._username = u;
-        } else {
-            alert("Please insert valid username")
+        } 
+        if( this.unsub)  {
+            this.unsub();
         }
     }
 

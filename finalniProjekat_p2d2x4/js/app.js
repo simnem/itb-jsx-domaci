@@ -36,9 +36,7 @@ formMessage.addEventListener("submit", e => {
     if (message.trim() != "") { 
         chatroom2.addChat(message);
         formMessage.reset();
-    } else { 
-        btnSend.disabled = true;
-        }
+    } 
     let newUsername = inputUpdate.value;
     chatroom2.username = newUsername;
     localStorage.setItem("chatroomUsername", JSON.stringify(newUsername));

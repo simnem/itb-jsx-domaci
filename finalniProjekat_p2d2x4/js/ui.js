@@ -28,7 +28,7 @@ class ChatUI {
         return li
     }
     formatDate( dateCreated ) { 
-        let date = dateCreated.toDate()//.toDateString()
+        let date = dateCreated.toDate()
         let formatedDate = outputDate(date)
         const time = dateCreated.toDate().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false})
         if(formatedDate != undefined) { 
@@ -54,7 +54,6 @@ class ChatUI {
             }
         });
         liParent.remove()
-// })
 }
 }
 function outputDate(date) {

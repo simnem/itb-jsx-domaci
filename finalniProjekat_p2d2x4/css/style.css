@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 14px;
 }
 header { 
@@ -41,6 +41,7 @@ div > section {
    text-align: left;
    height: 60vh;
    overflow: auto;
+   scroll-padding-bottom: 2em;
 }
 section ul { 
    list-style: none;
@@ -69,6 +70,7 @@ input[type=submit] {
    min-width: 100px;
    padding: 10px;
    margin-left: 5px;
+   width: 24%;
 }
 input[type=submit]:hover { 
    background-color: rgb(97, 24, 97);
@@ -82,17 +84,22 @@ form > section:first-of-type {
    justify-content: center;
    margin-bottom: 5px;
 }
+form section:last-of-type {
+   display: flex;
+}
+input[type=text] {
+   width: 100%;
+}
 form:first-of-type {
    display: flex;
-   justify-content: space-between;
 }
-form:first-of-type > input[type=color] { 
+form > input[type=color] { 
    width: 80%;
 }
-form:first-of-type > input[type=submit] { 
+form > input[type=submit] { 
    width: 20%;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 889px) {
    h1, h2, button, section, input { 
       width: 100%;
       display: flex;
@@ -108,10 +115,9 @@ form:first-of-type > input[type=submit] {
 body {
    overflow: auto;
 }}
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-   h1, h2, section { 
+@media screen and (min-width: 890px) and (max-width: 1024px) {
+   h1, h2, section, input { 
       width: 100%;
-      border: 1px solid red;
       display: flex;
       align-items: center;
       justify-content: flex-start;
